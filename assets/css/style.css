@@ -1,0 +1,19 @@
+.social-media-icons {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: left;
+  gap: 25px;
+  /* Adjust the gap as needed */
+}
+
+.social-media-icon {
+  width: 40px;
+  /* Set your desired icon width */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+.social-link {
+  text-decoration: none;
+  /* Remove underline from links */
+}

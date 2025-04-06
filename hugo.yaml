@@ -1,0 +1,50 @@
+baseURL: https://shuprime.github.io/
+languageCode: en-US
+title: Shuprime's Blog
+module:
+  imports:
+    - path: github.com/math-queiroz/rusty-typewriter
+
+caches:
+  images:
+    dir: :cacheDir/images
+params:
+  rtwt:
+    side:
+      home:
+        taxonomies:
+          - tags
+          - series
+        countTaxonomy: 4
+  author:
+    name: shuprime
+
+taxonomies:
+  tag: tags
+  topic: topics
+  series: series
+menus:
+  main:
+    - name: Posts
+      pageRef: /posts
+      weight: 1
+    - name: About
+      pageRef: /about.md
+      weight: 2
+outputFormats:
+  SearchIndex:
+    mediaType: application/json
+    baseName: searchindex
+    isPlainText: true
+    notAlternative: true
+mediaTypes:
+  application/json:
+    suffixes:
+      - json
+outputs:
+  home:
+    - HTML
+    - RSS
+    - SearchIndex
+scroll_top: Scroll to Top
+footer: Made with ❤️ and powered by {{ .HugoAnchor }}

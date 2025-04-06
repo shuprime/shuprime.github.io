@@ -1,0 +1,15 @@
+home:
+  image: "images/logo.svg"
+  greetings: "Stuck in the Loop!"
+  text: "Hi welcome to my blog, where I share my thoughts on technology, programming, and life. I hope you find something interesting here!"
+side:
+  home:
+    social:
+      - platform: github
+        link: "https://github.com/shuprime"
+      - platform: linkedin
+        link: "https://linkedin.com/in/gen0"
+      - platform: x-twitter
+        link: "https://x.com/gen0"
+      - platform: stack-overflow
+        link: "https://stackoverflow.com/users/9400151/gen0"
